@@ -1,17 +1,17 @@
-/* Global Styles */
+/* Global Light Theme */
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
-  background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
-  color: #fff;
+  background: #f9f9f9;
+  color: #333;
   scroll-behavior: smooth;
 }
 
 header {
   position: fixed;
   width: 100%;
-  background: rgba(0,0,0,0.7);
-  backdrop-filter: blur(10px);
+  background: #ffffff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   top: 0;
   left: 0;
   padding: 15px 50px;
@@ -24,7 +24,7 @@ header {
 .logo {
   font-size: 22px;
   font-weight: 600;
-  color: #00d9ff;
+  color: #007acc;
 }
 
 nav ul {
@@ -34,27 +34,20 @@ nav ul {
 }
 
 nav ul li a {
-  color: #fff;
+  color: #333;
   text-decoration: none;
   transition: color 0.3s;
+  font-weight: 500;
 }
 
 nav ul li a:hover {
-  color: #00d9ff;
+  color: #007acc;
 }
 
 .section {
   min-height: 100vh;
   padding: 120px 20px 50px;
   text-align: center;
-  opacity: 0;
-  transform: translateY(50px);
-  transition: all 1s ease;
-}
-
-.section.show {
-  opacity: 1;
-  transform: translateY(0);
 }
 
 .content {
@@ -62,28 +55,36 @@ nav ul li a:hover {
 }
 
 h1 span {
-  color: #00d9ff;
+  color: #007acc;
 }
 
 .tagline {
   font-size: 18px;
   margin-top: 10px;
-  color: #ccc;
+  color: #555;
 }
 
 .btn {
   display: inline-block;
   margin-top: 20px;
   padding: 10px 20px;
-  background: #00d9ff;
-  color: #000;
+  background: #007acc;
+  color: #fff;
   text-decoration: none;
   border-radius: 5px;
   transition: background 0.3s;
 }
 
 .btn:hover {
-  background: #00bfe0;
+  background: #005fa3;
+}
+
+.whatsapp {
+  background: #25D366;
+}
+
+.whatsapp:hover {
+  background: #1DA851;
 }
 
 .skills, .projects {
@@ -95,20 +96,23 @@ h1 span {
 }
 
 .skill-card, .project-card {
-  background: rgba(255,255,255,0.1);
+  background: #ffffff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   padding: 15px 20px;
   border-radius: 8px;
   width: 250px;
-  transition: transform 0.3s, background 0.3s;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .skill-card:hover, .project-card:hover {
   transform: translateY(-5px);
-  background: rgba(255,255,255,0.2);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
 footer {
   text-align: center;
   padding: 20px;
-  background: rgba(0,0,0,0.7);
+  background: #ffffff;
+  color: #777;
+  box-shadow: 0 -2px 5px rgba(0,0,0,0.05);
 }
